@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: $color-text-body-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-body-dark;
+  margin-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-text-body;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.container {
+  padding: 0 6.5rem;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: $font-weight-bold;
+  color: $color-btn-text-light;
+  padding: 20px 60px;
+  border-radius: 40px;
+  background: transparent;
+  border: none ;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &--primary {
+    background: $color-cyan;
+  }
+  &--secondary {
+    background: $color-light-blue;
+  }
+
+  &--link {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit ;
+  } 
+}
+
+.btn-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+   margin-top: 4rem;
+
+   @media (min-width: 60em) {
+    grid-template-columns: repeat(2, 1fr);
+   }
+ }
+
+ .grid-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+ }
+
+

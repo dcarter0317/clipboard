@@ -1,0 +1,149 @@
+// HEADER
+.header {
+  background: url('./images/bg-header-mobile.png'); 
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 15rem;
+
+  .logo-header {
+    margin: 1rem auto;
+  }
+  
+  .title {
+    font-size: 5rem;
+    color: $color-text-body;
+  }
+
+  p {
+    font-size: 2.2rem;
+    line-height: 1.7;
+    color: $color-text-body-light;
+  }
+
+  @media (min-width: 90em) {
+    background: url('./images/bg-header-desktop.png');
+  }
+}
+
+// SHOWCASE
+.showcase {
+  text-align: center;
+
+  p {
+    color: $color-text-body-light;
+  }
+}
+
+// FEATURE SECTION
+.feature-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  div {
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: 90em) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 6rem 0;
+    text-align: initial;
+
+    .featured-section__media {
+      position: relative;
+      left: -10rem;
+    }
+  }
+}
+
+// BANNER
+.banner__media {
+  display: inline-block;
+}
+
+.banner-features {
+  &__feature {
+    margin-bottom: 4rem;
+  }
+   
+  &__icon {
+   margin: 6em auto;
+  }
+
+  @media (min-width: 90em) {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+// CLIENTS
+.clients {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4em;
+  place-items: center;
+
+  @media (min-width: 90em) {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 9rem auto;
+  }
+}
+
+// LOWER BANNER
+.lower-banner {
+  padding: 8rem 0;
+}
+
+// FOOTER
+.footer {
+  padding-bottom: 15rem;
+
+  &__logo {
+    img {
+      width: 20%;
+      margin: auto;
+    }
+  }
+
+  &__links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+  }
+
+  &__social {
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: auto;
+   gap: 2rem;
+  }
+
+  @media (min-width: 90em) {
+    grid-template-columns: (15%  2fr  1fr);
+    margin-top: 6rem;
+
+    .footer__links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+      text-align: left;
+    }
+    
+    .footer__social {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+}
+
